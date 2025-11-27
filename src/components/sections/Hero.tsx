@@ -721,7 +721,7 @@ function HeroVersion5() {
           <motion.h1
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
             className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-8 text-slate-900"
             style={{ fontFamily: "var(--font-space-grotesk), system-ui, sans-serif" }}
           >
