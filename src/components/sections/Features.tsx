@@ -1,10 +1,10 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, Variants } from "framer-motion";
 import { useRef } from "react";
 import { Container } from "@/components/ui";
 
-const fadeInUp = {
+const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 50 },
   visible: { 
     opacity: 1, 
@@ -13,7 +13,7 @@ const fadeInUp = {
   },
 };
 
-const scaleIn = {
+const scaleIn: Variants = {
   hidden: { opacity: 0, scale: 0.8 },
   visible: { 
     opacity: 1, 
@@ -22,7 +22,7 @@ const scaleIn = {
   },
 };
 
-const staggerContainer = {
+const staggerContainer: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,

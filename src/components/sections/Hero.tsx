@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
+import { motion, AnimatePresence, useScroll, useTransform, Variants } from "framer-motion";
 import { Button, Container } from "@/components/ui";
 import { useState, useEffect, useRef } from "react";
 
@@ -13,7 +13,7 @@ import { useState, useEffect, useRef } from "react";
 // Clean fade-up with staggered children
 // ============================================
 function HeroVersion1() {
-  const staggerContainer = {
+  const staggerContainer: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -24,12 +24,12 @@ function HeroVersion1() {
     },
   };
 
-  const fadeInUp = {
+  const fadeInUp: Variants = {
     hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
-  const scaleIn = {
+  const scaleIn: Variants = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   };

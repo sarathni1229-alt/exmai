@@ -1,10 +1,10 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, Variants } from "framer-motion";
 import { useRef } from "react";
 import { Container, Button } from "@/components/ui";
 
-const fadeInUp = {
+const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 50 },
   visible: { 
     opacity: 1, 
@@ -13,7 +13,7 @@ const fadeInUp = {
   },
 };
 
-const fadeInLeft = {
+const fadeInLeft: Variants = {
   hidden: { opacity: 0, x: -50 },
   visible: { 
     opacity: 1, 
@@ -22,7 +22,7 @@ const fadeInLeft = {
   },
 };
 
-const fadeInRight = {
+const fadeInRight: Variants = {
   hidden: { opacity: 0, x: 50 },
   visible: { 
     opacity: 1, 
@@ -31,7 +31,7 @@ const fadeInRight = {
   },
 };
 
-const staggerContainer = {
+const staggerContainer: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
